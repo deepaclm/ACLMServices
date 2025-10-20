@@ -1,0 +1,61 @@
+/* transform */
+:root {
+  /**
+  @font family declaration
+  */
+  --rr-ff-heading: 'Poppins', sans-serif;
+  --rr-ff-heading1: 'Playfair Display', sans-serif;
+  --rr-ff-body: 'Poppins', sans-serif;
+  --rr-ff-fontawesome: "Font Awesome 6 Pro";
+  /**
+  @color declaration
+  */
+  --rr-common-white: #FFFFFF;
+  --rr-common-black: #000000;
+  --rr-common-placeholder: #4A5764;
+  --rr-body-primary: #fff;
+  --rr-theme-primary: #dfdfdf;
+  --rr-heading-primary: #000000;
+  --rr-text-body: rgba(5, 5, 19, 0.6);
+  --rr-text-primary: #151515;
+  --rr-shadow-primary: 0px 30px 60px 0px rgba(0, 15, 32, 0.1);
+  --rr-background-hero-2-bg: #EEEEEE;
+  --rr-background-body-bg: #F6F0E9;
+  --rr-border-primary: 1px solid rgba(5, 5, 19, 0.14);
+  /**
+  @font weight declaration
+  */
+  --rr-fw-normal: normal;
+  --rr-fw-thin: 100;
+  --rr-fw-elight: 200;
+  --rr-fw-light: 300;
+  --rr-fw-regular: 400;
+  --rr-fw-medium: 500;
+  --rr-fw-sbold: 600;
+  --rr-fw-bold: 700;
+  --rr-fw-ebold: 800;
+  --rr-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --rr-fs-body: 18px;
+  --rr-fs-body2: 18px;
+  --rr-fs-p: 15px;
+  --rr-fs-h1: 70px;
+  --rr-fs-h2: 100px;
+  --rr-fs-h3: 90px;
+  --rr-fs-h4: 24px;
+  --rr-fs-h5: 20px;
+  --rr-fs-h6: 15px;
+  --rr-lh-body: 28px;
+  --rr-lh-body2: 28px;
+  --rr-lh-p: 24px;
+  --rr-lh-h1: 72px;
+  --rr-lh-h2: 105px;
+  --rr-lh-h3: 100px;
+  --rr-lh-h4: 28px;
+  --rr-lh-h5: 32px;
+  --rr-lh-h6: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

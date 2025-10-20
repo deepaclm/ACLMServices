@@ -1,0 +1,162 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 banner Style 1
+/*----------------------------------------*/
+.banner-2{
+    &__area{
+        padding-top: 135px;
+        padding-bottom: 93px;
+    }
+    &__content{
+        &__shapes{
+            &-shape-1{
+                position: absolute;
+                top: 80px;
+                left: 122px;
+                z-index: 1;
+                @media #{$xl} {
+                    top: 135px;
+                }
+                @media #{$lg} {
+                    top: 75px;
+                }
+                @media #{$md} {
+                    top: 75px;
+                    left: 40px;
+                }
+                @media #{$sm, $xs} {
+                    display: none;
+                }
+            }
+            &-shape-2{
+                position: absolute;
+                top: 126px;
+                left: 717px;
+                z-index: 1;
+                @media #{$xl} {
+                    top: 135px;
+                    left: 517px;
+                }
+                @media #{$lg} {
+                    top: 110px;
+                    left: 320px;
+                }
+                @media #{$md} {
+                    top: 40px;
+                    left: 225px;
+                }
+                @media #{$sm, $xs} {
+                    display: none;
+                }
+            }
+            &-shape-3{
+                position: absolute;
+                top: 183px;
+                right: 193px;
+                z-index: 1;
+                @media #{$xl} {
+                    top: 97px;
+                    right: 193px;
+                }
+                @media #{$lg} {
+                    top: 97px;
+                    right: 193px;
+                }
+                @media #{$md} {
+                    top: 80px;
+                    right: 97px;
+                }
+                @media #{$sm, $xs} {
+                    display: none;
+                }
+            }
+            &-shape-4{
+                position: absolute;
+                top: -28px;
+                right: 163px;
+                z-index: 1;
+                @media #{$xl} {
+                    top: 0px;
+                    right: 130px;
+                }
+                @media #{$lg} {
+                    top: 35px;
+                    right: 105px;
+                }
+                @media #{$md} {
+                    top: 35px;
+                    right: 30px;
+                }
+                @media #{$sm, $xs} {
+                    display: none;
+                }
+            }
+        }
+        h1{
+            font-family: var(--rr-ff-heading);
+            font-weight: var(--rr-fw-sbold);
+            color: var(--rr-common-black);
+            font-style: normal;
+            font-size: 314px;
+            line-height: 280px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            @media #{$xxl} {
+                font-size: 255px;
+                line-height: 280px;
+            }
+            @media #{$xl} {
+                font-size: 222px;
+                line-height: 280px;
+            }
+            @media #{$lg} {
+                font-size: 182px;
+                line-height: 200px;
+            }
+            @media #{$md} {
+                font-size: 139px;
+                line-height: 160px;
+            }
+            @media #{$sm} {
+                font-size: 104px;
+                line-height: 125px;
+            }
+            @media #{$xs} {
+                font-size: 55px;
+                line-height: 80px;
+            }
+        }
+        h5{
+            font-family: var(--rr-ff-heading);
+            font-weight: var(--rr-fw-sbold);
+            color: var(--rr-common-black);
+            font-style: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            padding-left: 191px;
+            &::before{
+                background: var(--rr-common-black);
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                content: '';
+                top: 7px;
+                right: -18px;
+            }
+            @media #{$md} {
+                padding-left: 100px;
+            }
+            @media #{$sm, $xs} {
+                padding-left: 0;
+            }
+            @media #{$xs} {
+                font-size: 16px;
+                line-height: 26px;
+			}
+        }
+    }
+}

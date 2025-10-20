@@ -1,0 +1,140 @@
+@use "../../utils" as *;
+
+/*----------------------------------------*/
+/* 8.1 404
+/*----------------------------------------*/
+
+.faq-section {
+    &__thumb {
+        img {
+            border-radius: 10px;
+        }
+
+        @media #{$md,$sm,$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__content {
+        margin-left: 80px;
+
+        @media #{$lg,$md,$sm,$xs} {
+            margin-left: 0;
+        }
+
+        .title {
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 74px;
+            color: #453030;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-family: var(--rr-ff-heading);
+
+            @media #{$lg,$sm} {
+                font-size: 50px;
+                line-height: 65px;
+                margin-bottom: 30px;
+            }
+
+            @media #{$xs} {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .accordion-item {
+            color: inherit;
+            background-color: transparent;
+            border: 1.5px solid rgb(21 21 21 / 14%);
+            margin-bottom: 14px;
+            border-radius: 6px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:not(:first-of-type) {
+                border-top: 1.5px solid rgba(21, 21, 21, 0.14);
+            }
+        }
+
+        .accordion-button {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1;
+            color: #453030;
+            font-family: var(--rr-ff-heading);
+            padding: 24px 20px 22px 24px;
+            text-transform: uppercase;
+            background-color: transparent;
+            box-shadow: inherit;
+
+            @media #{$xs} {
+                font-size: 17px;
+                line-height: 1.4;
+            }
+
+            &:focus {
+                box-shadow: inherit;
+            }
+
+            &:not(.collapsed) {
+                color: #453030;
+                line-height: 1;
+                padding: 17px 20px 12px 24px;
+                text-transform: uppercase;
+                background-color: transparent;
+                box-shadow: inherit;
+
+                @media #{$xs} {
+                    line-height: 1.4;
+                }
+            }
+
+            &::after {
+                width: 32px;
+                height: 32px;
+                font-size: 12px;
+                margin-left: auto;
+                content: "\f107";
+                font-family: "Font Awesome 6 Pro";
+                background-image: inherit;
+                transition: all 0.3s ease-in-out;
+                border: 1px solid rgb(21 21 21 / 14%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+
+                @media #{$xs} {
+                    display: none;
+                }
+            }
+
+            &:not(.collapsed)::after {
+                background-image: inherit;
+                content: "\f106";
+                background-color: #453030;
+                color: var(--rr-common-white);
+            }
+        }
+
+        .accordion-body {
+            padding: 0 54px 31px 25px;
+
+            @media #{$xs} {
+                padding: 0 20px 31px 20px;
+            }
+
+            p {
+                font-family: var(--rr-ff-heading);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: rgb(69 48 48 / 70%);
+            }
+        }
+    }
+}

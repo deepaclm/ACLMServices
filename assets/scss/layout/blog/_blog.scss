@@ -1,0 +1,118 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  5.1 blog
+/*----------------------------------------*/
+// blog2-area style
+.blog2 {
+    &__thumb {
+        & img {
+            border-radius: 12px;
+        }
+    }
+    &__content {
+        &-catagory {
+            margin-top: 14px;
+            & ul {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                & li {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    & a {
+                        font-family: var(--rr-ff-heading);
+                        font-style: normal;
+                        font-weight: var(--rr-ff-medium);
+                        font-size: 15px;
+                        padding: 4px 12px;
+                        line-height: 60px;
+                        text-transform: uppercase;
+                        color: rgba(0, 0, 0, 0.7);
+                        border: 1px solid rgba(0, 0, 0, 0.14);
+                        border-radius: 6px;
+                        @media #{$lg} {
+                            font-size: 13px;
+                        }
+                        @media #{$mxs} {
+                            font-size: 13px;
+                        }
+                        & i {
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__title {
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        @media #{$xxs} {
+            padding-bottom: 17px;
+        }
+        & a {
+            font-family: var(--rr-ff-heading);
+            font-style: normal;
+            font-weight: var(--rr-fw-sbold);
+            font-size: 24px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #000000;
+            @media #{$xl} {
+                font-size: 22px;
+            }
+            @media #{$lg} {
+                font-size: 17px;
+                line-height: 25px;
+            }
+            @media #{$md} {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            @media #{$mxm} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$mxs} {
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+        }
+    }
+}
+
+// Faizen-blog-10 innner style
+.blog10 {
+    &__filter {
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @media #{$sm, $xs} {
+            display: none;
+        }
+        & .active {
+            color: #453030;
+        }
+        & button {
+            font-family: var(--rr-ff-heading);
+            font-style: normal;
+            font-weight: var(--rr-ff-medium);
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #8B7D7A;
+            @media #{$sm} {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            @media #{$xxs} {
+                font-size: 10px;
+                line-height: 0px;
+            }
+        }   
+    }
+} 

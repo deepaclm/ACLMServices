@@ -1,0 +1,30 @@
+$colors: (
+  common: (
+    "white": #FFFFFF,
+    "black": #000000,
+    "placeholder": #4A5764,
+  ),
+  body: (
+    "primary": #fff,
+  ),
+  theme: (
+    "primary": #dfdfdf,
+  ),
+  heading: (
+    "primary": #000000,
+  ),
+  text: (
+    "body": rgb(5 5 19 / 60%),
+    "primary": #151515,
+  ),
+  shadow: (
+      "primary": 0px 30px 60px 0px rgba(0, 15, 32, 0.10),
+  ),
+  background: (
+      "hero-2-bg": #EEEEEE,
+      "body-bg": #F6F0E9,
+  ),
+  border: (
+    "primary": 1px solid rgba(5, 5, 19, 0.14),
+  )
+);
