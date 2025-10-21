@@ -14,7 +14,7 @@
   --rr-common-black: #000000;
   --rr-common-placeholder: #4A5764;
   --rr-body-primary: #fff;
-  --rr-theme-primary: #FFDA59;
+  --rr-theme-primary: #4A5764;
   --rr-heading-primary: #453030;
   --rr-text-body: rgba(5, 5, 19, 0.6);
   --rr-text-primary: #151515;
@@ -185,19 +185,18 @@
   }
 }
 .banner__content h1 .solutions {
-  font-family: var(--rr-ff-heading1);
+  font-family: var(--rr-ff-heading);
   font-weight: var(--rr-fw-bold);
-  font-style: italic;
   font-size: 117px;
   line-height: 130px;
   text-transform: uppercase;
-  color: rgba(26, 26, 26, 0.4392156863);
+  color: var(--rr-text-primary);
   display: inline-block;
   transform: translate(0, -15px);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .banner__content h1 .solutions {
-    font-size: 90px;
+    font-size: 110px;
     line-height: 110px;
   }
 }
@@ -253,7 +252,6 @@
   font-family: var(--rr-ff-heading1);
   font-weight: var(--rr-fw-regular);
   color: var(--rr-heading-primary);
-  font-style: italic;
   font-size: 160px;
   line-height: 170px;
   text-transform: uppercase;

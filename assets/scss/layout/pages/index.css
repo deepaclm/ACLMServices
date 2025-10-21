@@ -3087,7 +3087,7 @@
   transition: all 0.3s ease-in-out;
 }
 .video-section__play a:hover {
-  background: #9BEA9B;
+  background: #dfdfdf;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .video-section__play a {
