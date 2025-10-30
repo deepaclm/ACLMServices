@@ -1388,18 +1388,16 @@
   transition: 0.6s;
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo {
-  background: #fff;
+ 
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo svg path {
-  stroke: #fff;
-  fill: #fff;
+ 
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo svg g {
   opacity: 1;
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo svg g path {
-  stroke: #fff;
-  fill: #fff;
+  
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active::before {
   display: none;

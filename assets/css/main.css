@@ -12236,7 +12236,6 @@ body .ui-tooltip {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #000;
   position: absolute;
   top: 0px;
   left: 0;
@@ -12264,7 +12263,6 @@ body .ui-tooltip {
   content: "";
   width: 0;
   height: 2px;
-  background-color: #000;
   position: absolute;
   top: 0px;
   left: 0;
@@ -12273,13 +12271,13 @@ body .ui-tooltip {
   transition: 0.6s;
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo {
-  background: var(--rr-common-black);
+ 
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo svg path {
-  fill: #fff;
+ 
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active .brand-section__logo svg g path {
-  fill: #fff;
+ 
 }
 .brand-section-2 .sk-logo-slide__active .swiper-wrapper .swiper-slide.swiper-slide-active::before {
   display: none;
