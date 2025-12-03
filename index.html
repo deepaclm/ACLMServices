@@ -30,6 +30,11 @@
       href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.3/dist/CustomEase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.3/umd/index.min.js"></script>
+
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/animate.min.css" />
@@ -49,16 +54,8 @@
   </head>
 
   <body>
-    <!-- preloader start -->
-    <div id="preloader">
-      <div class="preloader-close">x</div>
-      <div class="sk-three-bounce">
-        <div class="sk-child sk-bounce1"></div>
-        <div class="sk-child sk-bounce2"></div>
-        <div class="sk-child sk-bounce3"></div>
-      </div>
-    </div>
-    <!-- preloader start -->
+ 
+ 
 
     <!-- Backtotop start -->
     <div class="backtotop-wrap cursor-pointer">
@@ -126,7 +123,31 @@
     <!-- Offcanvas area start -->
 
     <!-- Header area start -->
-    <header>
+    
+
+    <div id="popup-search-box">
+      <div class="box-inner-wrap d-flex align-items-center">
+        <form id="form" action="#" method="get" role="search">
+          <input
+            id="popup-search"
+            type="text"
+            name="s"
+            placeholder="Type keywords here..."
+          />
+        </form>
+        <div class="search-close">
+          <i class="fa-sharp fa-regular fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Header area end -->
+
+    <!-- Body main wrapper start -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Banner area start -->
+           <header>
       <div id="header-sticky" class="header header-3" style="width: 100vw">
         <div class="container">
           <div class="mega__menu-wrapper p-relative">
@@ -224,30 +245,66 @@
       </div>
     </header>
 
-    <div id="popup-search-box">
-      <div class="box-inner-wrap d-flex align-items-center">
-        <form id="form" action="#" method="get" role="search">
-          <input
-            id="popup-search"
-            type="text"
-            name="s"
-            placeholder="Type keywords here..."
-          />
-        </form>
-        <div class="search-close">
-          <i class="fa-sharp fa-regular fa-xmark"></i>
-        </div>
+
+<div id="hero-wrapper">
+
+  
+
+    <!-- IMAGE GRID FIRST (ON TOP) -->
+    <div class="image-grid">
+      <div class="grid-row">
+        <div class="img"><img src="/assets/imgs/preloader/img1.jpg" /></div>
+        <div class="img"><img src="/assets/imgs/preloader/img2.jpg" /></div>
+        <div class="img"><img src="/assets/imgs/preloader/img3.jpg" /></div>
+      </div>
+      <div class="grid-row">
+        <div class="img"><img src="/assets/imgs/preloader/img4.jpeg" /></div>
+        <div class="img hero-img"><img src="/assets/imgs/preloader/img5.jpg" /></div>
+        <div class="img"><img src="/assets/imgs/preloader/img6.jpg" /></div>
+      </div>
+      <div class="grid-row">
+        <div class="img"><img src="/assets/imgs/preloader/img7.jpg" /></div>
+        <div class="img"><img src="/assets/imgs/preloader/img8.jpg" /></div>
+        <div class="img"><img src="/assets/imgs/preloader/img9.jpg" /></div>
       </div>
     </div>
-    <!-- Header area end -->
 
-    <!-- Body main wrapper start -->
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <main>
-          <!-- Banner area start -->
 
-          <section class="banner__area body-bg p-relative overflow-hidden z-1">
+    <!-- BANNER FLOAT IMAGES -->
+    <div class="banner-img banner-img-1"><img src="/assets/imgs/preloader/img1.jpg" /></div>
+    <div class="banner-img banner-img-2"><img src="/assets/imgs/preloader/img2.jpg" /></div>
+
+    <!-- TEXT -->
+    <div class="intro-copy">
+      <h3>Creative Solutions</h3>
+      <h3>Impactful Results</h3>
+    </div>
+
+    <div class="title">
+      <h1>Beyond All Possibilities</h1>
+    </div>
+
+    <!-- OVERLAY LAST (BELOW GRID) -->
+    <div class="overlay">
+      <div class="projects">
+        <div class="projects-header"><p>Project</p><p>Director</p></div>
+      </div>
+      <div class="loader">
+        <h1 class="logo-line-1">ACLM SERVICES</h1>
+      </div>
+      <div class="locations">
+        <div class="locations-header"><p>Location</p></div>
+      </div>
+    </div>
+
+</div>
+
+
+    <script type="module" src="./assets/js/video.js"></script>
+
+          
+             <!--
+    <section class="banner__area p-relative">
             <div class="banner__line-shape">
               <div class="project-section__border__shape"></div>
               <div class="project-section__border__shape"></div>
@@ -296,7 +353,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
 
           <section
             class="the-brand__area the-brand section-space-top-140 section-space-bottom-160"
@@ -369,6 +426,176 @@
               </div>
             </div>
           </section>
+
+
+
+             <div class="award-section__area award-section section-space body-bg">
+    <div class="container">
+        <div class="section__title-wrapper-2 text-center hero">
+            <h2 class="section__title-wrapper-2-title _split_text">Influencer <br> <span>Marketing</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="award-section__wrap">
+
+                    <!-- 1 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>01.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Brand Awareness Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img1.jpg"></div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>02.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">App Download Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img2.jpg"></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>03.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Product Launch Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img3.jpg"></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>04.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Sales / Conversion Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img4.jpg"></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>05.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">User-Generated Content (UGC)</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img5.jpg"></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>06.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Podcast / Video Feature Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img6.jpg"></div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>07.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Seasonal / Festival Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img7.jpg"></div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>08.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Cause / CSR Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img8.jpg"></div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="award-section__item p-relative rr-hover-reveal-item active">
+                        <a href="service-details.html">
+                            <div class="award-section__inner-item d-flex justify-content-between align-items-center">
+                                <div class="award-section__content d-flex align-items-center">
+                                    <div class="award-section__year"><span>09.</span></div>
+                                    <div class="award-section__title-box">
+                                        <h3 class="award-section__title">Event & Experiential Campaigns</h3>
+                                        <h4 class="award-section__subtitle">Marketing</h4>
+                                    </div>
+                                </div>
+                                <div class="award-section__link"><span><i class="fa-regular fa-arrow-right"></i></span></div>
+                            </div>
+                        </a>
+                        <div class="rr-hover-reveal-bg" data-background="assets/imgs/shapes/img9.jpg"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
           <section
             class="project-section-2__area project-section-2 black-bg section-space-top-160 section-space-bottom-160"
@@ -2115,6 +2342,9 @@
     <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
 
     <!-- JS here -->
+
+
+
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/vendor/chroma.min.js"></script>
     <script src="assets/js/plugins/waypoints.min.js"></script>

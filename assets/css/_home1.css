@@ -1122,8 +1122,8 @@
 }
 
 .award-section__wrap .item-3 .rr-hover-reveal-bg {
-  width: 139px;
-  height: 244px;
+  width: 300px;
+  height: 300px;
 }
 .award-section__content {
   column-gap: 141px;
@@ -1144,7 +1144,7 @@
   }
 }
 .award-section__year span {
-  color: rgba(69, 48, 48, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -1162,7 +1162,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 60px;
-  color: #453030;
+  color: #1a1a1a;
   text-transform: uppercase;
   font-family: var(--rr-ff-heading);
   transition: 0.3s all ease-in-out;
@@ -1252,7 +1252,7 @@
 .award-section__item:hover {
   padding-left: 40px;
   padding-right: 30px;
-  background-color: #EEE7DF;
+  background-color: #dfdfdf;
 }
 @media (max-width: 575px) {
   .award-section__item:hover {
@@ -1262,7 +1262,7 @@
 }
 .award-section__item:hover .award-section__link span {
   color: #fff;
-  background-color: #453030;
+  background-color: #000000;
 }
 .award-section__item:hover .award-section__link span i {
   transform: rotate(0);
@@ -1311,8 +1311,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 174px;
-  height: 259px;
+  width: 220px;
+  height: 300px;
   opacity: 0;
   margin: -150px 0 0 -150px;
   overflow: hidden;
