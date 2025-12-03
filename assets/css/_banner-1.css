@@ -131,7 +131,7 @@ header,
   display: flex;
   gap: 2em;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 300;
   pointer-events: auto;
 }
 
@@ -210,7 +210,7 @@ header,
   display: flex;
   flex-direction: column;
   gap: 1em;
-  z-index: 100000 !important;         /* HIGHEST LAYER ABOVE OVERLAY */
+  z-index: 400 !important;         /* HIGHEST LAYER ABOVE OVERLAY */
   pointer-events: none;   /* Let clicks pass through */
 }
 
@@ -264,6 +264,7 @@ header,
   font-family: "Inter", sans-serif;
   font-weight: 500;
   
+  
   font-style: italic;
   color: #000;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -286,9 +287,10 @@ header,
     display: none;
   }
 
+
   #hero-wrapper .title {
     width: 100%;
-    bottom: 20%;
+    bottom: 25%;
     display: flex;
     justify-content: center;
   }
@@ -301,6 +303,7 @@ header,
   #hero-wrapper .image-grid {
     width: 75%;
     gap: 0.5em;
+    top: 45%;
   }
 
   #hero-wrapper .grid-row {
