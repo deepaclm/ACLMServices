@@ -8,6 +8,17 @@ if (typeof gsap === "undefined") {
 }
 
 
+const preloadImages = (count = 35) => {
+  const imgs = [];
+  for (let i = 1; i <= count; i++) {
+    const img = new Image();
+    img.src = `/assets/imgs/preloader/img${i}.jpg`;
+    imgs.push(img);
+  }
+  return imgs;
+};
+
+preloadImages();
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -142,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function startImageRotation() {
-    const totalCycles = 30;
+    const totalCycles = 25;
 
     for (let cycle = 0; cycle < totalCycles; cycle++) {
       const randomImages = getRandomImageSet();
