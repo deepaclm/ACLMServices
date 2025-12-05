@@ -307,7 +307,7 @@ overlayTimeline.to(
     // HERO POP
     imagesTimeline.to(".hero-img", {
       y: -50,
-      duration: 1,
+      duration: 1.5,
       ease: "hop"
     });
 
@@ -317,8 +317,8 @@ overlayTimeline.to(
       duration: 1.5,
       ease: "hop",
       onStart: () => {
-        gsap.to(".hero-img img", { scale: 1, duration: 1.5 });
-        gsap.to(".banner-img", { scale: 1, duration: 1.5 });
+        gsap.to(".hero-img img", { scale: 1, duration: 1.25 });
+        gsap.to(".banner-img", { scale: 1, delay: 0.5,duration: 1 });
         gsap.to("nav", { y: "0%", duration: 1, delay: 0.25 });
       }
     });

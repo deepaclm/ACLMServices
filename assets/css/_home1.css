@@ -1120,29 +1120,33 @@
   height: 1px;
   left: 0;
 }
-
 .award-section__wrap .item-3 .rr-hover-reveal-bg {
   width: 300px;
   height: 300px;
 }
+
 .award-section__content {
   column-gap: 141px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .award-section__content {
     column-gap: 100px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .award-section__content {
     column-gap: 50px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .award-section__content {
     display: block !important;
   }
 }
+
 .award-section__year span {
   color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
@@ -1153,11 +1157,13 @@
   text-transform: uppercase;
   font-family: var(--rr-ff-heading);
 }
+
 @media (max-width: 575px) {
   .award-section__year span {
     margin-right: 30px;
   }
 }
+
 .award-section__title {
   font-size: 20px;
   font-weight: 600;
@@ -1167,62 +1173,73 @@
   font-family: var(--rr-ff-heading);
   transition: 0.3s all ease-in-out;
 }
+
 @media (max-width: 575px) {
   .award-section__title {
     font-size: 17px;
   }
 }
+
 .award-section__title-box {
   display: flex;
   align-items: center;
   column-gap: 265px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .award-section__title-box {
     column-gap: 150px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .award-section__title-box {
     column-gap: 100px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .award-section__title-box {
     display: block;
   }
 }
+
 .award-section__title-box span {
-  color: #403C38;
+  color: #3d3c3b;
   font-size: 13px;
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   font-family: var(--rr-ff-heading);
 }
+
 @media (max-width: 575px) {
   .award-section__title-box span {
     font-size: 11px;
   }
 }
+
 .award-section__subtitle {
   font-family: var(--rr-ff-heading);
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
-  color: rgba(69, 48, 48, 0.7);
+  color: rgba(76, 75, 75, 0.7);
   text-transform: uppercase;
 }
+
 @media (max-width: 575px) {
   .award-section__subtitle {
     font-size: 15px;
   }
 }
+
 @media (max-width: 575px) {
   .award-section__link {
     margin-top: 20px;
   }
 }
+
 .award-section__link > span {
   width: 54px;
   height: 54px;
@@ -1231,76 +1248,92 @@
   align-items: center;
   justify-content: center;
   font-size: 17px;
-  color: #453030;
+  color: #000000;
   border-radius: 6px;
 }
+
 .award-section__link > span i {
   transition: 0.3s;
   transform: rotate(-45deg);
 }
+
 @media (max-width: 575px) {
   .award-section__inner-item {
     display: block !important;
   }
 }
+
 .award-section__item {
   padding: 27px 0;
   position: relative;
   border-radius: 10px;
   transition: 0.3s;
 }
+
 .award-section__item:hover {
   padding-left: 40px;
   padding-right: 30px;
   background-color: #dfdfdf;
 }
+
 @media (max-width: 575px) {
   .award-section__item:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+
 .award-section__item:hover .award-section__link span {
   color: #fff;
   background-color: #000000;
 }
+
 .award-section__item:hover .award-section__link span i {
   transform: rotate(0);
 }
+
 .award-section__item.item-2 .award-section__title-box {
   column-gap: 184px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .award-section__item.item-2 .award-section__title-box {
     column-gap: 74px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .award-section__item.item-2 .award-section__title-box {
     column-gap: 20px;
   }
 }
+
 .award-section__item.item-3 .award-section__title-box {
   column-gap: 308px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .award-section__item.item-3 .award-section__title-box {
     column-gap: 193px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .award-section__item.item-3 .award-section__title-box {
     column-gap: 143px;
   }
 }
+
 .award-section__item.item-4 .award-section__title-box {
   column-gap: 278px;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .award-section__item.item-4 .award-section__title-box {
     column-gap: 163px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .award-section__item.item-4 .award-section__title-box {
     column-gap: 113px;
@@ -1311,7 +1344,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 220px;
+  width: 235px;
   height: 300px;
   opacity: 0;
   margin: -150px 0 0 -150px;
@@ -1321,15 +1354,98 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -moz-transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -ms-transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -o-transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.3s, transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .award-section__item:hover .rr-hover-reveal-bg {
   opacity: 1;
 }
+
+/* ======================================================
+   MOBILE FIX — REMOVE HOVER + SHOW STATIC IMAGE INSIDE
+   ====================================================== */
+@media (max-width: 767px) {
+
+  /* Static image container — supports either background-image OR an inner <img> */
+  .award-section__item .rr-hover-reveal-bg {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 45vh;
+    z-index: 0;
+    opacity: 1 !important;
+    margin: 20px 0 0 50px;
+    pointer-events: none;
+    border-radius: 0px;
+    overflow: hidden;
+
+    /* don't forcibly reset transform here — animation needs it */
+    /* transform: none !important;  <-- removed */
+
+    /* Smooth hardware-accelerated animation hint */
+    will-change: transform;
+  }
+
+  /* If the visual is a background-image on the div, animate the div itself */
+  .award-section__item .rr-hover-reveal-bg {
+    animation: floatImage 4.5s ease-in-out infinite;
+  }
+
+  /* If the visual is an <img> inside the container, make sure it fills & animates */
+  .award-section__item .rr-hover-reveal-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* animate the img instead of the wrapper if you're using <img> */
+    animation: floatImage 4.5s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Remove hover animations */
+  .award-section__item:hover {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+  }
+
+  .award-section__item:hover .award-section__link span {
+    background-color: transparent;
+    color: #000000;
+  }
+
+  .award-section__item:hover .award-section__link span i {
+    transform: rotate(-45deg);
+  }
+
+  /* Stack layout cleanly */
+  .award-section__inner-item,
+  .award-section__content,
+  .award-section__title-box {
+    display: block !important;
+  }
+}
+
+/* FLOAT ANIMATION KEYFRAMES — subtle and smooth */
+@keyframes floatImage {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(6px, -4px) scale(1.02);
+  }
+  50% {
+    transform: translate(0px, -10px) scale(1.03);
+  }
+  75% {
+    transform: translate(-6px, -4px) scale(1.02);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+
 
 .brand-border-minuas {
   border-top: none !important;
