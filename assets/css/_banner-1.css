@@ -281,11 +281,36 @@ header,
 /* RESPONSIVE ------------------------------- */
 @media (max-width: 900px) {
   #hero-wrapper .projects,
-  #hero-wrapper .locations,
-  #hero-wrapper .intro-copy,
-  #hero-wrapper .banner-img {
+  #hero-wrapper .locations {
     display: none;
   }
+
+  #hero-wrapper .banner-img {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 50%;
+  aspect-ratio: 4/5;
+  z-index: 200;
+}
+
+#hero-wrapper .intro-copy {
+  position: absolute;
+  top: 8%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  display: none;
+}
+
+#hero-wrapper .intro-copy h3 {
+  font-size: 1.5rem;
+}
 
 
   #hero-wrapper .title {
