@@ -1,0 +1,326 @@
+.yard-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yard-wrapper .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.yard-wrapper .menu {
+  width: 100%;
+  margin: 5rem 0;
+}
+
+.yard-wrapper .menu-item {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.yard-wrapper p {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 16px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 120%;
+  letter-spacing: -0.025em;
+  transition: color 0.25s;
+}
+
+.yard-wrapper .info,
+.yard-wrapper .tag,
+.yard-wrapper .name {
+  position: relative;
+  overflow: hidden;
+}
+
+.yard-wrapper .info,
+.yard-wrapper .tag {
+  flex: 1;
+  height: 20px;
+}
+
+.yard-wrapper .tag {
+  text-align: right;
+}
+
+.yard-wrapper .name {
+  flex: 3;
+  height: 55px;
+  text-align: center;
+}
+
+.yard-wrapper .name p {
+  font-size: 24px !important;
+}
+
+.yard-wrapper .info p:nth-child(2),
+.yard-wrapper .name p:nth-child(2),
+.yard-wrapper .tag p:nth-child(2) {
+  top: 100%;
+  color: #000;
+}
+
+.yard-wrapper .menu:hover .info p:nth-child(1),
+.yard-wrapper .menu:hover .name p:nth-child(1),
+.yard-wrapper .menu:hover .tag p:nth-child(1) {
+  color: rgb(165, 165, 165);
+}
+
+.yard-wrapper .preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 300px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.yard-wrapper .preview-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.yard-wrapper .preview-img-2 {
+  bottom: 20px;
+  left: 20px;
+}
+
+.yard-wrapper .preview-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .yard-wrapper .menu {
+    margin: 0em 0;
+  }
+
+ 
+
+  .yard-wrapper .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+  }
+
+  .yard-wrapper .info,
+  .yard-wrapper .tag {
+    font-size: 12px !important;
+    height: auto;
+  }
+
+  .yard-wrapper .name {
+    font-size: 28px !important;
+    height: auto;
+    text-align: left;
+  }
+
+  .yard-wrapper .info p:nth-child(2),
+  .yard-wrapper .name p:nth-child(2),
+  .yard-wrapper .tag p:nth-child(2) {
+    top: 0 !important;
+    position: relative !important;
+  }
+   .yard-wrapper .info p:nth-child(2),
+  .yard-wrapper .tag p:nth-child(2) {
+    top: 0 !important;
+    position: relative !important;
+    color: #383838;
+  }
+
+  .yard-wrapper .preview {
+    display: none !important;
+  }
+}
+
+
+.scroll-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.scroll-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "PP Neue Montreal";
+  
+}
+
+/* General Section Layout */
+.scroll-wrapper section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-hero,
+.scroll-outro {
+  background: #202020;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.scroll-hero h1,
+.scroll-outro h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Sticky Cards */
+.scroll-sticky-cards {
+  background: #ffffff;
+  position: relative;
+}
+
+.scroll-card {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  width: 25%;
+  height: 50%;
+  background: #202020;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: #fff;
+}
+
+.scroll-card-img {
+  flex: 1 1 0;
+}
+
+.scroll-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-card-content {
+  flex: 0 0 12px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-card-content p {
+  text-transform: uppercase;
+  font-family: "Akkurat Mono";
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+ .scroll-wrapper {
+  display: none;
+}
+}
+
+
+/* HERO SECTION */
+.scroll-hero {
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.scroll-hero-inner {
+  text-align: center;
+  max-width: 900px;
+}
+
+.scroll-hero h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.scroll-hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .scroll-hero h1 {
+    font-size: 2.5rem;
+  }
+  .scroll-hero p {
+    font-size: 1rem;
+  }
+}
+
+
+.glitch-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36px;
+  background: #24252c;
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  font-style: italic;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.glitch-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.glitch-btn svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  pointer-events: none;
+  transform: skew(-15deg);
+}
+
+.glitch-btn .blue rect {
+  fill: #05eafa;
+  shape-rendering: crispEdges;
+  mix-blend-mode: plus-lighter;
+}
+
+.glitch-btn .pink rect {
+  fill: #ff6bd3;
+  shape-rendering: crispEdges;
+}
+
+
+
