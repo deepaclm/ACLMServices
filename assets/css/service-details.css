@@ -203,8 +203,9 @@
   will-change: transform;
   width: 25%;
   height: 50%;
-  background: #202020;
-  padding: 0.5em;
+  /* background: #202020;
+  padding: 0.2em; */
+  border: #101010 5px solid;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
